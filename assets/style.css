@@ -1,0 +1,33 @@
+body{
+    background-color: aqua;
+}
+.container{
+    margin: 60px;
+}
+.row{
+    display: flex;
+    margin-top: 60px;
+}
+.card{
+    border: solid 2px #0000;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin-left: 70px;
+    border-radius: 15%;
+    padding: 30px;
+}
+button{
+    background-color: rgb(0, 102, 255);
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.img{
+    margin-left: 190px;
+    color: black;
+}
