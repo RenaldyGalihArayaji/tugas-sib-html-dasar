@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Press+Start+2P&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,15 +16,67 @@ body{
     display: flex;
     margin-top: 60px;
 }
-.card{
-    border: solid 2px #0000;
-    width: 400px;
-    height: 400px;
-    background-color: rgb(238, 241, 243);
-    margin-left: 70px;
-    border-radius: 10%;
-    padding: 30px;
+
+/* styling galeri.html */
+.judul{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: brown;
+    margin-bottom: 50px;
 }
+.judul span{
+    color: rgb(42, 75, 165);
+}
+.sub-judul{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+.baris{
+    margin-top: 20px;
+}
+.card{
+    width: 250px;
+    height: 330px;
+    border-radius: 10px;
+    background-color:brown;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.4);
+    margin: 0 0 30px 37px ;
+    padding: 5px;
+    display: inline-block;
+}
+.card i{
+    font-size: 12px; 
+    color: rgb(236, 184, 70); 
+}
+.card img{
+    width: 250px;
+    height: 240px;
+    border-radius: 10px;
+}
+.card-blue{
+    width: 250px;
+    height: 330px;
+    border-radius: 10px;
+    background-color:rgb(42, 75, 165);
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.4);
+    margin: 0 0 30px 37px ;
+    padding: 5px;
+    display: inline-block;
+}
+.card-blue img{
+    width: 250px;
+    height: 240px;
+    border-radius: 10px;
+}
+.card-blue i{
+    font-size: 12px; 
+    color: rgb(236, 175, 106); 
+}
+
+/* End styling galeri.html */
+
 button{
     background-color:brown;
     border: none;
@@ -51,3 +107,5 @@ nav ul li{
 nav ul li :hover{
     color: rgb(255, 123, 0);
 }
+
+
