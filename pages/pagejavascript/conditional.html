@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional</title>
+</head>
+<body>
+    <h1>Belajar Conditional</h1>
+
+    <script>
+
+        var makan = prompt(" MENU MAKAN : \n 1. BAKSO \n 2. MIE AYAM \n 3. NASI PADANG \n 4. GUDEG \n 5. SOTO");
+        if (makan == "bakso") {
+            alert("Enak");
+        }else if (makan == "mie ayam") {
+            alert("lumayan enak");
+        }else if (makan == "nasi padang") {
+            alert("sangat enak");
+        }else if (makan == "gudeg") {
+            alert("Enak manis");
+        }else if (makan == "soto") {
+            alert(" enak gurih");
+        } else{
+            alert("pilih sesuai menu!!")
+        }
+
+
+        var minum = prompt(" MENU MINUm : \n 1. Es Teh \n 2. Es Jeruk \n 3. Lemon tea ");
+        switch (minum) {
+            case "esteh":
+                alert(" Makan : " + makan + "\n Minum : " + minum);
+            break;
+            case "esjeruk":
+                 alert(" Makan : " + makan + "\n Minum : " + minum);
+            break;
+            case "lemontea":
+                 alert(" Makan : " + makan + "\n Minum : " + minum);
+            break;
+            default:
+                alert("Cek Pesanan")
+            break;
+        }
+        
+
+
+    </script>
+</body>
+</html>
