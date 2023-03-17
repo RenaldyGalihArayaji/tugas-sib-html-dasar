@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Conversion</title>
+</head>
+<body>
+    <h1>Belajar Data Conversion</h1>
+
+    <script>
+    
+    // Implicit Conversion
+        const angka = 10;
+        const kata = "20";
+        const hasil = angka + kata;
+        console.log(hasil); 
+
+    // Explicit Conversion
+        const angka1 = "10";
+        const angkaInt1 = Number(angka);
+        console.log(angkaInt1); // Output: 10
+
+        const kata1 = 123;
+        const kataString1 = String(kata);
+        console.log(kataString1); // Output: "123"
+
+        const boolean = 1;
+        const booleanBoolean = Boolean(boolean);
+        console.log(booleanBoolean); // Output: true
+        
+    // tampilan
+    alert(" Implicit Conversion : " + hasil +" \n Explicit Conversion : " + "\n" + angkaInt1 + "\n" + kataString1 + "\n" + booleanBoolean)
+    
+
+
+    </script>
+</body>
+</html>

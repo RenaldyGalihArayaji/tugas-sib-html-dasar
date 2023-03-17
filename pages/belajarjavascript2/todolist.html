@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Todo List App</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    
+</head>
+<body style="font-family: 'Fredoka One', cursive; background-color: rgb(245, 242, 242);">
+	<div class="container my-5">
+		<h1 class="text-center mb-4 text-primary">Todo List Sederhana</h1>
+		<div class="row">
+			<div class="col-md-8 mx-auto">
+				<div class="card">
+					<div class="card-header">
+						<form id="todo-form">
+							<div class="form-row align-items-center">
+								<div class="col-md-8">
+									<label class="sr-only" for="todo-input">Todo</label>
+									<input type="text" class="form-control mb-2" id="todo-input" placeholder="Jangan lupa di isi">
+								</div>
+								<div class="col-md-4">
+									<button type="submit" class="btn btn-primary mb-2 btn-block">Tambah</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<ul class="list-group list-group-flush" id="todo-list">
+						<!-- todo items will be added here dynamically -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../../assets/js/app.js"></script>
+</body>
+</html>
