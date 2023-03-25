@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: rgb(223, 221, 221);
+    overflow-y: hidden ;
+    width: 100%;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    background-color: rgb(155, 8, 8);
+    padding: 15px 0;
+    justify-content: space-around;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.title{
+    color: rgb(255, 166, 0);
+    font-size: 21px;
+}
+ nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 30%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(255, 166, 0);
+    
+}
+
+/* tombol */
+.menu{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    display: none;
+}
+.menu #cek{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2.2px;
+    right: 0.5px;
+    /* opacity: 0; */
+    cursor: pointer;
+}
+
+
+/* banner */
+.banner{
+    background-image: url('../assets/images/banner.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 80px;
+    padding: 50px 50px 50px 100px;
+}
+
+/* content */
+.content   {
+    margin-top: 20px;
+    padding: 50px 50px 50px 100px;
+    width: 80%;  
+    flex-direction: row;
+}
+.img{
+    display: flex;
+}
+.card{
+    display: flex;
+    width: 297px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card img{
+    border-radius: 10px;
+    padding: 5px;
+}
+.artikel {
+    margin-top: 30px;
+}
+
+/* Responsive*/
+/* Mobile */
+@media screen and(max-width : 768px) {
+  nav ul{
+    width: 40%;
+  }
+  .img{
+    display: block;
+  }
+  
+  .banner{
+    padding: 100px 50px 50px 50px;
+  }
+}
+
+@media screen and (max-width : 576px) {
+    .menu{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        align-items: center;
+        height: 30%;
+        background-color: blue;
+        justify-content: space-evenly;
+        width: 100%;
+        border-radius: 0 0  100px 100px;
+        transform: translateY(0);
+        transition: all 1s;
+        opacity: 1;
+    }
+    nav ul .slide{
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+}
